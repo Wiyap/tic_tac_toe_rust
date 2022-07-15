@@ -1,10 +1,9 @@
-mod grid;
+mod game;
 
-use grid::Grid;
+use game::Game;
 
 fn main() {
-  let mut grid = Grid::generate();
-
-  grid.display()
-  // println!("{}", grid.cells[0].state);
+  let mut game = Game::new();
+  game.turn();
+  // println!("{}", game.current_player.sign);
 }
