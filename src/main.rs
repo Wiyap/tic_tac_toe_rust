@@ -4,6 +4,8 @@ use game::Game;
 
 fn main() {
   let mut game = Game::new();
-  game.turn();
+  while true {
+    game.turn();
+  }
   // println!("{}", game.current_player.sign);
 }
